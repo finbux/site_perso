@@ -1,0 +1,36 @@
+<div class="cb"></div>
+<footer>
+    <div id="footer_wrapper">
+        <div class="contact"><h4>Me contacter</h4>
+            <a href="contact.php">Contactez moi</a>
+        </div>
+        <div class="social"><h4>Retrouvez moi sur les réseaux sociaux</h4>
+            <img src="img/facebook.png" alt="Retrouvez moi sur Facebook">
+            <img src="img/twitter.png" alt="Retrouvez moi sur Twiiter">
+            <a href="https://www.linkedin.com/pub/j%C3%A9r%C3%A9my-lasson/b5/81/4b7"><img src="img/linkedin.png" alt="Retrouvez moi sur Linkedin"></a>
+        </div>
+
+    </div>
+</footer>
+<script type='text/javascript'>
+    $(function(){
+        $(window).scroll(function () {//Au scroll dans la fenetre on déclenche la fonction
+            hdr = $('header').height();
+            logo = $("#logo");
+            fix = "fixHeader";
+            logo = $('#logo');
+            header = $('header');
+            if( $(this).scrollTop()) {
+                header.addClass(fix);
+                logo.hide();
+
+            } else {
+                header.removeClass(fix);
+                logo.show();
+
+            }
+        });
+    });
+</script>
+</body>
+</html>
